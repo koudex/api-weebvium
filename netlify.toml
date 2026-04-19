@@ -1,0 +1,40 @@
+# Netlify Configuration for Anime API
+# One-click deployment supported
+
+[build]
+  command = "npm install"
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["express"]
+
+# Redirect all traffic to the serverless function
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/api/:splat"
+  status = 200
+  force = true
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+    Cache-Control = "public, max-age=300, s-maxage=300"
+
+# Development settings
+[dev]
+  command = "npm start"
+  port = 3001
+  targetPort = 3001
+  autoLaunch = true

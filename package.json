@@ -1,0 +1,40 @@
+{
+  "name": "anime-api",
+  "version": "2.0.0",
+  "description": "Serverless Anime API - One-click deploy to Vercel & Netlify. Supports AniWatch, GogoAnime, and KickAssAnime.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "vercel-dev": "vercel dev",
+    "netlify-dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "crypto-js": "^4.2.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "http-errors": "^2.0.0",
+    "node-cache": "^5.1.2",
+    "serverless-http": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "anime",
+    "api",
+    "serverless",
+    "vercel",
+    "netlify",
+    "aniwatch",
+    "hianime",
+    "gogoanime",
+    "anitaku",
+    "kickassanime"
+  ],
+  "license": "MIT"
+}
