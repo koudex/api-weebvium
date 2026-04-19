@@ -8,7 +8,7 @@ A comprehensive Anime API that aggregates data from **AniWatch/HiAnime**, **Gogo
 
 ### Deploy to Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=YOUR_REPO_URL)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/koudex/api-weebvium.git)
 
 **Steps:**
 1. Click the deploy button above
@@ -17,7 +17,7 @@ A comprehensive Anime API that aggregates data from **AniWatch/HiAnime**, **Gogo
 
 ### Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=YOUR_REPO_URL)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/koudex/api-weebvium.git)
 
 **Steps:**
 1. Click the deploy button above
